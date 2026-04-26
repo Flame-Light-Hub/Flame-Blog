@@ -225,7 +225,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -238,7 +238,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -672,7 +672,7 @@ pre .caption a:hover {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
+  font-family: JetBrains Mono, consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
 }
 code {
   border-radius: 3px;
@@ -1243,8 +1243,8 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 1.375em;
+  font-family: Noto Serif SC, Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1.8em;
   font-weight: normal;
   line-height: 1.5;
   margin: 0;
@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #6f658c;
+    background: #47ccd4;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1635,7 +1635,6 @@ pre code {
   border: 1px solid #eee;
   max-width: 120px;
   padding: 2px;
-  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
@@ -1999,7 +1998,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2188,7 +2187,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2902,5 +2901,167 @@ header.header {
   }
   .comments {
     padding: 10px 12px;
+  }
+}
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Source Han Serif CN", serif !important;
+  background-color: #f8f7f4;
+  color: #2d2d2d;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #2d2d2d;
+}
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.8em;
+}
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #e85a4f;
+}
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+a {
+  color: #e85a4f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #c74b42;
+}
+.posts-expand .post-body {
+  font-size: 1.05em;
+  line-height: 2;
+}
+.posts-expand .post-body p {
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+.posts-expand .post-body blockquote {
+  border-left: 4px solid #e85a4f;
+  background: #f5ebe0;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  color: #5a5a5a;
+  font-style: italic;
+}
+.posts-expand .post-body img {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 2em auto;
+  display: block;
+  max-width: 100%;
+}
+.site-author-image {
+  border-radius: 0 !important;
+  border: 3px solid #e85a4f;
+  box-shadow: 0 8px 30px rgba(232,90,79,0.2);
+}
+.sidebar {
+  background: #f5ebe0;
+}
+.sidebar .sidebar-inner {
+  padding: 2em 1.5em;
+}
+.sidebar .site-author-name {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+.sidebar .site-description {
+  color: #666;
+  font-style: italic;
+}
+.header {
+  background: rgba(248,247,244,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.header .site-title {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+.post-block {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+  padding: 2.5em;
+  margin-bottom: 2em;
+}
+.post-block:hover {
+  box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+}
+.post-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+}
+.post-title a {
+  color: #2d2d2d;
+}
+.post-title a:hover {
+  color: #e85a4f;
+}
+.post-meta {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+.pagination .page-number {
+  border-radius: 0;
+}
+.pagination .page-number.current {
+  background: #e85a4f;
+  border-color: #e85a4f;
+}
+.footer {
+  background: #2d2d2d;
+  color: rgba(255,255,255,0.7);
+  padding: 3em 0;
+}
+.footer a {
+  color: #e85a4f;
+}
+.tag-cloud-tags a {
+  border: 1px solid #e85a4f;
+  border-radius: 4px;
+  padding: 0.3em 0.8em;
+  margin: 0.3em;
+  color: #e85a4f;
+  font-size: 0.9em !important;
+}
+.tag-cloud-tags a:hover {
+  background: #e85a4f;
+  color: #fff;
+}
+.posts-collapse .post-title {
+  font-size: 1.2em;
+}
+.posts-collapse .collection-title {
+  font-size: 1.4em;
+}
+@media (max-width: 767px) {
+  .post-block {
+    padding: 1.5em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.4em;
   }
 }
