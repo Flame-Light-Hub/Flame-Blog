@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #964262;
+    background: #ffffb1;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2694,6 +2694,29 @@ header.header {
     padding: 10px 12px;
   }
 }
+:root {
+  --body-bg-color: #fefdfb;
+  --content-bg-color: #fff;
+  --card-bg-color: #f7f4f0;
+  --text-color: #1a1a1a;
+  --selection-bg: #d4451a;
+  --selection-color: #fff;
+  --blockquote-color: #4a4a4a;
+  --link-color: #d4451a;
+  --link-hover-color: #e86b4a;
+  --brand-color: #1a1a1a;
+  --brand-hover-color: #d4451a;
+  --table-row-odd-bg-color: #fafafa;
+  --table-row-hover-bg-color: #f5f5f5;
+  --menu-item-bg-color: #f5f5f5;
+  --theme-color: #d4451a;
+  --btn-default-bg: #fff;
+  --btn-default-color: #d4451a;
+  --btn-default-border-color: #d4451a;
+  --btn-default-hover-bg: #d4451a;
+  --btn-default-hover-color: #fff;
+  --btn-default-hover-border-color: #d4451a;
+}
 * {
   box-sizing: border-box;
 }
@@ -2702,10 +2725,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
-  background: #fefdfb;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Serif SC", "Source Han Serif SC", Georgia, serif !important;
+  background: #fefdfb !important;
   color: #1a1a1a;
-  line-height: 1.9;
+  line-height: 1.8;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -2718,6 +2741,7 @@ h4 {
   color: #1a1a1a;
   letter-spacing: -0.02em;
   line-height: 1.4;
+  font-family: "Noto Serif SC", "Source Han Serif SC", Georgia, serif !important;
 }
 h1 {
   font-size: 2.4rem;
