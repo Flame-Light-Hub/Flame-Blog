@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #1d6bff;
+    background: #75e011;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2713,8 +2713,8 @@ body {
   --content-bg-color: #161b22 !important;
   --card-bg-color: #161b22 !important;
   --text-color: #e6edf3 !important;
-  --link-color: #c9a86c !important;
-  --brand-color: #c9a86c !important;
+  --link-color: #58a6ff !important;
+  --brand-color: #58a6ff !important;
   --menu-item-bg-color: transparent !important;
 }
 body,
@@ -2753,7 +2753,7 @@ body,
   gap: 0.5em;
 }
 .site-title a:hover {
-  color: #c9a86c !important;
+  color: #58a6ff !important;
 }
 .site-subtitle {
   color: #8b949e !important;
@@ -2779,11 +2779,8 @@ body,
   letter-spacing: 0.02em;
 }
 .menu .menu-item a:hover {
-  color: #c9a86c !important;
-  background: rgba(201,168,108,0.1) !important;
-}
-.menu-toggle {
-  color: #8b949e !important;
+  color: #58a6ff !important;
+  background: rgba(88,166,255,0.1) !important;
 }
 h1,
 h2,
@@ -2801,7 +2798,7 @@ h2 {
   font-size: 1.4rem;
   margin: 2em 0 1em;
   padding-bottom: 0.4em;
-  border-bottom: 1px solid #c9a86c;
+  border-bottom: 1px solid #58a6ff;
 }
 h3 {
   font-size: 1.15rem;
@@ -2812,12 +2809,12 @@ p {
   text-align: justify;
 }
 a {
-  color: #c9a86c;
+  color: #58a6ff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 a:hover {
-  color: #d4b896;
+  color: #79c0ff;
 }
 .post-block {
   background: #161b22 !important;
@@ -2837,7 +2834,7 @@ a:hover {
   color: #e6edf3;
 }
 .post-title a:hover {
-  color: #c9a86c;
+  color: #58a6ff;
 }
 .post-meta {
   color: #8b949e;
@@ -2861,10 +2858,10 @@ a:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 blockquote {
-  border-left: 2px solid #c9a86c;
+  border-left: 2px solid #58a6ff;
   margin: 2em 0;
   padding: 1em 1.5em;
-  background: rgba(201,168,108,0.06);
+  background: rgba(88,166,255,0.06);
   color: #8b949e;
   font-style: italic;
   border-radius: 0 6px 6px 0;
@@ -2877,8 +2874,8 @@ blockquote p {
   height: auto !important;
   max-width: 100%;
   border-radius: 4px !important;
-  border: 2px solid #c9a86c;
-  box-shadow: 0 4px 16px rgba(201,168,108,0.15);
+  border: 2px solid #58a6ff;
+  box-shadow: 0 4px 16px rgba(88,166,255,0.15);
 }
 .site-author-name {
   font-size: 1.2rem;
@@ -2900,7 +2897,7 @@ blockquote p {
 }
 .btn,
 .post-button .btn {
-  background: #c9a86c;
+  background: #58a6ff;
   color: #0d1117;
   border: none;
   border-radius: 4px;
@@ -2910,7 +2907,7 @@ blockquote p {
 }
 .btn:hover,
 .post-button .btn:hover {
-  background: #d4b896;
+  background: #79c0ff;
   color: #0d1117;
 }
 .pagination .page-number {
@@ -2921,12 +2918,12 @@ blockquote p {
   min-width: 2.2em;
 }
 .pagination .page-number:hover {
-  color: #c9a86c;
-  border-color: #c9a86c;
+  color: #58a6ff;
+  border-color: #58a6ff;
 }
 .pagination .page-number.current {
-  background: #c9a86c;
-  border-color: #c9a86c;
+  background: #58a6ff;
+  border-color: #58a6ff;
   color: #0d1117;
 }
 .footer {
@@ -2936,19 +2933,19 @@ blockquote p {
   padding: 2rem 0;
 }
 .footer a {
-  color: #c9a86c;
+  color: #58a6ff;
 }
 .tag-cloud-tags a {
   display: inline-block;
   padding: 0.25em 0.7em;
   margin: 0.2em;
-  border: 1px solid #c9a86c;
+  border: 1px solid #58a6ff;
   border-radius: 4px;
-  color: #c9a86c;
+  color: #58a6ff;
   font-size: 0.82rem !important;
 }
 .tag-cloud-tags a:hover {
-  background: #c9a86c;
+  background: #58a6ff;
   color: #0d1117;
 }
 pre,
@@ -2960,7 +2957,7 @@ code {
   color: #e6edf3;
 }
 .posts-collapse .post-title a:hover {
-  color: #c9a86c;
+  color: #58a6ff;
 }
 @media (max-width: 767px) {
   .post-block {
