@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff367f;
+    background: #110de4;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3048,4 +3048,16 @@ code {
   .site-title {
     font-size: 1.3rem !important;
   }
+}
+.posts-collapse .post-gallery-link {
+  display: block;
+  cursor: pointer;
+}
+.posts-collapse .post-gallery-link:hover .post-gallery-image img {
+  opacity: 0.85;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.posts-collapse .post-gallery .post-gallery-image img {
+  transition: all 0.3s ease;
 }
