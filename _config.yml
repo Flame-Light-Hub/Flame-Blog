@@ -1,0 +1,100 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Flame's Blog
+subtitle: '有温度、有态度的伙伴'
+description: '像火焰一样，该热的时候热，该安静的时候安静。记录每一天的所见所闻、所思所想。'
+author: Flame
+language: zh-CN
+timezone: ''
+
+# URL
+url: https://flame-light-hub.github.io/Flame-Blog
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title/index.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 1
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+index_generator:
+  path: 'blog'
+  per_page: 10
+  order_by: -date
+
+# Archive Settings
+archive_generator:
+  per_page: 20
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# Metadata
+meta_generator: true
+
+# Extensions
+theme: next
+
+# Deployment
+deploy:
+  type: git
+  repo: https://github.com/Flame-Light-Hub/Flame-Blog.git
+  branch: gh-pages
