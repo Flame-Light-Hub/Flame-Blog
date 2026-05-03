@@ -1,120 +1,318 @@
-// 深空青蓝全局样式
+// ==============================
+// 深空青蓝 · 全面暗色主题
+// ==============================
 
-body {
-  background-color: #0D1117 !important;
-  color: #C9D1D9;
-}
+// --- 全局基础 ---
+html, body
+  background-color: #0D1117 !important
+  color: #E6EDF3
 
-.main-inner, .content-wrap {
-  background-color: #161B22 !important;
-}
+::selection
+  background: rgba(88,166,255,0.3)
+  color: #E6EDF3
 
-.post-title-link, .post-title a {
-  color: #58A6FF !important;
-  &:hover {
-    color: #79C0FF !important;
-  }
-}
+// --- 头部 Header ---
+.header
+  background: #0D1117 !important
+  border-bottom: 1px solid #21262D
 
-.category-list-link, .tag-list-link, .posts-collapse .post-title-link {
-  color: #58A6FF;
-}
+.site-brand-container
+  background: #0D1117 !important
 
-.tag-cloud a {
-  color: #58A6FF !important;
-  border: 1px solid #388BFD;
-  &:hover {
-    color: #79C0FF !important;
-    border-color: #58A6FF;
-  }
-}
+.brand
+  color: #E6EDF3 !important
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(88, 166, 255, 0), rgba(88, 166, 255, 0.75), rgba(88, 166, 255, 0));
-}
+.site-title
+  color: #E6EDF3 !important
+  font-weight: 600
 
-.site-author-image {
-  border-radius: 4px !important;
-  box-shadow: 0 0 20px rgba(88, 166, 255, 0.4);
-}
+.site-subtitle
+  color: #8B949E !important
 
-.post-body img {
-  box-shadow: 0 0 10px rgba(88, 166, 255, 0.15);
-}
+// --- 导航菜单 ---
+.site-nav
+  background: #0D1117 !important
 
-.posts-collapse .post-header::before {
-  background-color: #58A6FF;
-  box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
-}
+.menu-item a
+  color: #8B949E !important
+  border-bottom: 2px solid transparent
+  &:hover
+    color: #58A6FF !important
+    background: rgba(88,166,255,0.08) !important
 
-.sidebar-inner {
-  background: #0D1117 !important;
-}
+.menu-item-active a
+  color: #58A6FF !important
+  border-bottom-color: #58A6FF !important
 
-.menu-item-active a, .menu-item a:hover {
-  color: #58A6FF !important;
-}
+// --- 主体布局 ---
+.main-inner
+  background: transparent !important
 
-.btn {
-  background-color: #388BFD;
-  border-color: #58A6FF;
-  &:hover {
-    background-color: #58A6FF;
-  }
-}
+.content-wrap
+  background: transparent !important
 
-code, pre {
-  background-color: #161B22;
-  border-color: #30363D;
-}
+// --- 首页归档列表 ---
+.archive-title
+  color: #58A6FF !important
+  font-weight: 600
 
-.archive-title, .posts-collapse .collection-title {
-  color: #58A6FF !important;
-}
+.posts-collapse
+  .post-header
+    border-bottom: 1px solid #21262D
+    padding: 12px 0
+    &:hover
+      background: rgba(88,166,255,0.04)
+    .post-meta-line time
+      color: #8B949E
+      font-size: 13px
+    .post-title-link
+      color: #E6EDF3 !important
+      font-weight: 500
+      &:hover
+        color: #58A6FF !important
 
-.page-number, .extend {
-  color: #58A6FF;
-  &:hover {
-    color: #79C0FF;
-  }
-}
+// --- 归档页面 ---
+.posts-collapse::before
+  background-color: #30363D !important
 
-.footer, .post-copyright {
-  color: #8B949E;
-}
+.posts-collapse .post-header::before
+  background-color: #58A6FF !important
+  box-shadow: 0 0 0 3px rgba(88,166,255,0.2)
 
-a {
-  color: #58A6FF;
-  &:hover {
-    color: #79C0FF;
-  }
-}
+.collection-title
+  color: #58A6FF !important
 
-blockquote {
-  border-left-color: #388BFD;
-  color: #8B949E;
-}
+// --- 文章页 ---
+.post-block
+  background: #161B22 !important
+  border-radius: 8px
+  padding: 32px
+  margin-bottom: 24px
+  border: 1px solid #21262D
 
-thead th {
-  background-color: #161B22;
-  border-bottom-color: #30363D;
-}
+.post-title
+  color: #E6EDF3 !important
+  font-weight: 700
 
-td {
-  border-bottom-color: #30363D;
-}
+.post-title-link
+  color: #E6EDF3 !important
+  &:hover
+    color: #58A6FF !important
 
-// Sidebar dark theme
-.site-state-item {
-  color: #C9D1D9;
-}
+.post-meta
+  color: #8B949E !important
+  span
+    color: #8B949E !important
 
-.site-author-name, .site-description {
-  color: #C9D1D9;
-}
+.post-body
+  color: #E6EDF3
+  line-height: 1.8
+  h2, h3, h4, h5, h6
+    color: #E6EDF3
+    border-bottom-color: #21262D
+  p
+    color: #E6EDF3
+  img
+    border-radius: 6px
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3)
 
-.links-of-author-item a {
-  color: #58A6FF !important;
-}
+// --- 分类页 ---
+.category-list-item
+  a
+    color: #E6EDF3 !important
+    &:hover
+      color: #58A6FF !important
+
+.category-list-count
+  color: #8B949E !important
+
+// --- 标签页 ---
+.tag-cloud a
+  color: #8B949E !important
+  background: #21262D
+  border: 1px solid #30363D
+  border-radius: 4px
+  padding: 4px 10px
+  margin: 4px
+  display: inline-block
+  &:hover
+    color: #58A6FF !important
+    background: rgba(88,166,255,0.1)
+    border-color: #388BFD
+
+// --- 链接 ---
+a
+  color: #58A6FF
+  &:hover
+    color: #79C0FF
+
+// --- 引用 ---
+blockquote
+  border-left: 3px solid #388BFD !important
+  background: rgba(88,166,255,0.04) !important
+  color: #8B949E !important
+
+// --- 代码 ---
+code
+  background: #1C2128 !important
+  color: #E6EDF3 !important
+  border: 1px solid #30363D
+  border-radius: 4px
+
+pre
+  background: #1C2128 !important
+  border: 1px solid #30363D
+  border-radius: 6px
+  code
+    border: none
+
+.highlight
+  background: #1C2128 !important
+  border-radius: 6px
+
+// --- 表格 ---
+table
+  border-color: #30363D
+  th
+    background: #161B22 !important
+    color: #E6EDF3 !important
+    border-bottom-color: #30363D
+  td
+    border-bottom-color: #21262D
+    color: #E6EDF3
+  tr:hover td
+    background: rgba(88,166,255,0.06)
+
+// --- 分隔线 ---
+hr
+  border: none
+  height: 1px
+  background: linear-gradient(to right, transparent, #30363D, transparent)
+
+// --- 按钮 ---
+.btn
+  background: #21262D
+  color: #E6EDF3
+  border: 1px solid #30363D
+  border-radius: 6px
+  &:hover
+    background: #30363D
+    color: #58A6FF
+    border-color: #388BFD
+
+// --- 分页 ---
+.pagination
+  .page-number, .extend
+    color: #8B949E !important
+    background: #21262D !important
+    border: 1px solid #30363D
+    border-radius: 4px
+    &:hover
+      color: #58A6FF !important
+      background: rgba(88,166,255,0.1) !important
+      border-color: #388BFD
+  .current
+    color: #58A6FF !important
+    background: rgba(88,166,255,0.15) !important
+    border-color: #388BFD
+
+// --- 侧边栏 ---
+.sidebar
+  background: #0D1117 !important
+  border-right: 1px solid #21262D
+
+.sidebar-inner
+  background: #0D1117 !important
+
+.site-author-image
+  border-radius: 6px !important
+  border: 2px solid #30363D
+  box-shadow: 0 0 16px rgba(88,166,255,0.15)
+
+.site-author-name
+  color: #E6EDF3 !important
+
+.site-description
+  color: #8B949E !important
+
+.site-state-item
+  color: #8B949E
+  .site-state-item-count
+    color: #E6EDF3 !important
+  .site-state-item-name
+    color: #8B949E !important
+
+.links-of-author-item a
+  color: #8B949E !important
+  border-bottom-color: #21262D !important
+  &:hover
+    color: #58A6FF !important
+
+// --- 页脚 ---
+.footer
+  background: #0D1117 !important
+  color: #484F58 !important
+  a
+    color: #8B949E !important
+    &:hover
+      color: #58A6FF !important
+
+// --- 返回顶部 ---
+.back-to-top
+  background: #21262D !important
+  color: #8B949E !important
+  border: 1px solid #30363D
+  &:hover
+    color: #58A6FF !important
+
+// --- 搜索 ---
+.search-box input
+  background: #161B22 !important
+  color: #E6EDF3 !important
+  border: 1px solid #30363D
+  &::placeholder
+    color: #484F58
+
+// --- 文章底部 ---
+.post-copyright
+  background: rgba(88,166,255,0.04) !important
+  border: 1px solid #21262D !important
+  border-radius: 6px
+  color: #8B949E
+
+.post-nav
+  .post-nav-item
+    color: #8B949E !important
+    &:hover
+      color: #58A6FF !important
+
+// --- 相关文章 ---
+.related-posts
+  .related-post-title
+    color: #E6EDF3 !important
+  .related-post-link
+    color: #58A6FF !important
+
+// --- 阅读进度条 ---
+.reading-progress-bar
+  background: linear-gradient(90deg, #388BFD, #58A6FF, #79C0FF) !important
+
+// --- GitHub角落 ---
+.github-corner
+  svg
+    fill: #58A6FF !important
+    color: #0D1117 !important
+
+// --- 滚动条美化 ---
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+
+::-webkit-scrollbar-track
+  background: #0D1117
+
+::-webkit-scrollbar-thumb
+  background: #30363D
+  border-radius: 4px
+  &:hover
+    background: #484F58
