@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #c761bb;
+    background: #ff06ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3223,4 +3223,7 @@ hr {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #484f58;
+}
+.site-nav-toggle {
+  display: none !important;
 }
