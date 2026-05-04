@@ -3,12 +3,6 @@
 // 深空蓝太空科幻感配色
 // ==============================
 
-// --- 顶部标题居中 ---
-.site-brand-container
-  .site-meta
-    text-align: center
-  .site-title
-    text-align: center
 
 // --- 全局基础 ---
 html, body
@@ -146,40 +140,11 @@ html, body
     display: block
     margin: 0 auto
 
-// --- 文章内图片 - 深空蓝主题 ---
-.post-body img,
-.entry-content img,
-.post-content img
-  max-width: 100%
-  height: auto
-  display: block
-  margin: 0 auto
-  object-fit: contain
 
-// --- 分类页 ---
-.category-list-item
-  a
-    color: #C9D1D9 !important
-    &:hover
-      color: #A5D8FF !important
 
-.category-list-count
-  color: #7B8CA8 !important
+// --- 
 
-// --- 标签页 ---
-.tag-cloud a
-  color: #7B8CA8 !important
-  background: #1A2332
-  border: 1px solid #2D4A6F
-  border-radius: 4px
-  padding: 4px 10px
-  margin: 4px
-  display: inline-block
-  &:hover
-    color: #A5D8FF !important
-    background: rgba(77,166,255,0.12)
-    border-color: #4DA6FF
-
+// --- 
 // --- 链接 ---
 a
   color: #4DA6FF
@@ -343,36 +308,101 @@ hr
     fill: #4DA6FF !important
     color: #0A0E1A !important
 
-// --- 归档页封面图 - 深空蓝主题 ---
+
+
+
+// --- 修复：顶部标题真正居中 ---
+.site-brand-container
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  .site-meta
+    text-align: center
+    flex: 1
+  .site-nav-right
+    position: absolute
+    right: 10px
+
+// --- 修复：封面图尺寸加大 ---
 .post-gallery
-  margin: 12px 0
+  margin: 16px 0
   display: flex
   flex-wrap: wrap
-  gap: 8px
+  gap: 12px
   .post-gallery-image
-    width: 120px
-    height: 80px
+    width: 100%
+    max-width: 320px
+    height: auto
+    min-height: 180px
     overflow: hidden
-    border-radius: 6px
+    border-radius: 8px
     border: 1px solid #2D4A6F
     a
       display: block
       width: 100%
       height: 100%
       &:hover img
-        transform: scale(1.05)
+        transform: scale(1.03)
     img
       width: 100%
-      height: 100%
+      height: auto
       object-fit: cover
       transition: transform 0.3s ease
+      display: block
 
-// --- 封面图尺寸修复 - 确保图片完整展示 ---
-.post-gallery .post-gallery-image img
-  width: 100%
-  height: 100%
+// --- 修复：分类页字体加大 + 视觉和谐 ---
+.category-list
+  font-size: 18px !important
+  .category-list-item
+    margin: 16px 0 !important
+    padding: 12px 16px !important
+    background: #111827 !important
+    border: 1px solid #1E3A5F !important
+    border-radius: 8px !important
+    transition: all 0.2s ease
+    &:hover
+      border-color: #4DA6FF !important
+      background: rgba(77,166,255,0.08) !important
+  .category-list-link
+    font-size: 18px !important
+    font-weight: 500 !important
+  .category-list-count
+    font-size: 14px !important
+
+// --- 修复：标签页字体加大 ---
+.tag-cloud
+  a
+    font-size: 16px !important
+    padding: 6px 14px !important
+
+// --- 全局字体大小微调 ---
+.post-body
+  font-size: 16px !important
+  line-height: 1.85 !important
+
+.collection-title
+  font-size: 22px !important
+
+.archive-title
+  font-size: 22px !important
+
+.posts-collapse
+  .post-header
+    padding: 14px 0 !important
+  .post-meta-line time
+    font-size: 14px !important
+  .post-title-link
+    font-size: 16px !important
+
+// --- 文章内图片确保完整展示 ---
+.post-body img
+  max-width: 100%
+  height: auto
+  display: block
+  margin: 16px auto
   object-fit: contain
-  max-width: none
+  border-radius: 6px
 
 // --- 滚动条美化 ---
 ::-webkit-scrollbar
