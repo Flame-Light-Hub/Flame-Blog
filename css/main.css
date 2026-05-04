@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff06ff;
+    background: #9da2ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3226,4 +3226,28 @@ hr {
 }
 .site-nav-toggle {
   display: none !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #0d1117;
+    --content-bg-color: #161b22;
+    --card-bg-color: #1c2128;
+    --text-color: #e6edf3;
+    --selection-bg: rgba(88,166,255,0.3);
+    --selection-color: #e6edf3;
+    --blockquote-color: #8b949e;
+    --link-color: #58a6ff;
+    --link-hover-color: #79c0ff;
+    --brand-color: #58a6ff;
+    --brand-hover-color: #79c0ff;
+    --table-row-odd-bg-color: #1c2128;
+    --table-row-hover-bg-color: rgba(88,166,255,0.06);
+    --menu-item-bg-color: #21262d;
+    --theme-color: #58a6ff;
+    --btn-default-bg: #21262d;
+    --btn-default-color: #e6edf3;
+    --btn-default-border-color: #30363d;
+    --btn-default-hover-bg: #30363d;
+    --btn-default-hover-color: #58a6ff;
+  }
 }
