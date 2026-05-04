@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #e5f470;
+    background: #ffa60e;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3256,4 +3256,38 @@ hr {
   display: block;
   border-radius: 8px;
   object-fit: contain;
+}
+.posts-collapse::before {
+  width: 2px !important;
+  margin-left: -1px !important;
+}
+.posts-collapse .post-header::before {
+  width: 8px !important;
+  height: 8px !important;
+  left: -5px !important;
+  margin-left: 0 !important;
+}
+.posts-collapse .collection-title::before {
+  width: 10px !important;
+  height: 10px !important;
+  margin-left: -5px !important;
+}
+.posts-collapse .post-gallery {
+  margin: 12px 0 12px 20px !important;
+  justify-content: center !important;
+}
+.posts-collapse .post-gallery .post-gallery-image {
+  max-width: 320px !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.posts-collapse .post-gallery .post-gallery-image img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 8px;
+}
+.posts-collapse .post-header {
+  margin-left: 10px !important;
+  padding-left: 20px !important;
 }
