@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #1788e4;
+    background: #e47e1a;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3246,4 +3246,14 @@ hr {
     --btn-default-hover-bg: #1e3a5f;
     --btn-default-hover-color: #a5d8ff;
   }
+}
+.post-cover {
+  margin: 0 0 24px 0;
+}
+.post-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
 }
