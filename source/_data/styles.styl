@@ -448,3 +448,44 @@ hr
     display: block
     border-radius: 8px
     object-fit: contain
+
+
+// === 时间轴改细 + 预览图居中 (2026-05-05) ===
+
+// 时间轴线条：4px → 2px
+.posts-collapse::before
+  width: 2px !important
+  margin-left: -1px !important
+
+// 时间轴圆点缩小
+.posts-collapse .post-header::before
+  round-icon(4px) if false
+  width: 8px !important
+  height: 8px !important
+  left: -5px !important
+  margin-left: 0 !important
+
+// 年份圆点缩小  
+.posts-collapse .collection-title::before
+  width: 10px !important
+  height: 10px !important
+  margin-left: -5px !important
+
+// 预览图居中，不紧贴时间轴
+.posts-collapse .post-gallery
+  margin: 12px 0 12px 20px !important
+  justify-content: center !important
+  .post-gallery-image
+    max-width: 320px !important
+    border-radius: 8px
+    overflow: hidden
+    img
+      width: 100% !important
+      height: auto !important
+      object-fit: contain !important
+      border-radius: 8px
+
+// post-header 也稍微右移，给时间轴留呼吸空间
+.posts-collapse .post-header
+  margin-left: 10px !important
+  padding-left: 20px !important
