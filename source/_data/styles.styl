@@ -22,21 +22,21 @@ html, body
   background: #0A0E1A !important
 
 .brand
-  color: #F0F6FC !important
+  color: #FFFFFF !important
 
 .site-title
   color: #F0F6FC !important
   font-weight: 600
 
 .site-subtitle
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
 
 // --- 导航菜单 ---
 .site-nav
   background: #0A0E1A !important
 
 .menu-item a
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
   border-bottom: 2px solid transparent
   &:hover
     color: #4DA6FF !important
@@ -55,7 +55,7 @@ html, body
 
 // --- 首页归档列表 ---
 .archive-title
-  color: #4DA6FF !important
+  color: #58B4FF !important
   font-weight: 600
 
 .posts-collapse
@@ -65,27 +65,27 @@ html, body
     &:hover
       background: rgba(77,166,255,0.06)
     .post-meta-line time
-      color: #7B8CA8
+      color: #8B9AB8
       font-size: 13px
     .post-title-link
       color: #C9D1D9 !important
       font-weight: 500
       &:hover
-        color: #A5D8FF !important
+        color: #9ECBFF !important
 
 // --- 归档页面 ---
 .posts-collapse::before
-  background-color: #1E3A5F !important
+  background-color: #2D4A6F !important
 
 .posts-collapse .post-header::before
-  background-color: #4DA6FF !important
-  box-shadow: 0 0 0 3px rgba(77,166,255,0.25)
+  background-color: #58B4FF !important
+  box-shadow: 0 0 0 4px rgba(77,166,255,0.2), 0 0 12px rgba(77,166,255,0.15)
 
 .collection-title
-  color: #4DA6FF !important
+  color: #58B4FF !important
 
 .collection-header
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
 
 .collection-year
   .collection-header
@@ -94,7 +94,7 @@ html, body
 
 .post-meta-container
   time
-    color: #7B8CA8 !important
+    color: #8B9AB8 !important
 
 // --- 文章页 ---
 .post-block
@@ -114,9 +114,9 @@ html, body
     color: #A5D8FF !important
 
 .post-meta
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
   span
-    color: #7B8CA8 !important
+    color: #8B9AB8 !important
 
 .post-body
   color: #C9D1D9
@@ -155,7 +155,7 @@ a
 blockquote
   border-left: 3px solid #4DA6FF !important
   background: rgba(77,166,255,0.06) !important
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
 
 // --- 代码 ---
 code
@@ -208,7 +208,7 @@ hr
 // --- 分页 ---
 .pagination
   .page-number, .extend
-    color: #7B8CA8 !important
+    color: #8B9AB8 !important
     background: #1A2332 !important
     border: 1px solid #2D4A6F
     border-radius: 4px
@@ -238,17 +238,17 @@ hr
   color: #F0F6FC !important
 
 .site-description
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
 
 .site-state-item
-  color: #7B8CA8
+  color: #8B9AB8
   .site-state-item-count
     color: #F0F6FC !important
   .site-state-item-name
-    color: #7B8CA8 !important
+    color: #8B9AB8 !important
 
 .links-of-author-item a
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
   border-bottom-color: #1E3A5F !important
   &:hover
     color: #A5D8FF !important
@@ -258,14 +258,14 @@ hr
   background: #0A0E1A !important
   color: #4A5568 !important
   a
-    color: #7B8CA8 !important
+    color: #8B9AB8 !important
     &:hover
       color: #A5D8FF !important
 
 // --- 返回顶部 ---
 .back-to-top
   background: #1A2332 !important
-  color: #7B8CA8 !important
+  color: #8B9AB8 !important
   border: 1px solid #2D4A6F
   &:hover
     color: #A5D8FF !important
@@ -283,11 +283,11 @@ hr
   background: rgba(77,166,255,0.06) !important
   border: 1px solid #1E3A5F !important
   border-radius: 6px
-  color: #7B8CA8
+  color: #8B9AB8
 
 .post-nav
   .post-nav-item
-    color: #7B8CA8 !important
+    color: #8B9AB8 !important
     &:hover
       color: #A5D8FF !important
 
@@ -324,32 +324,24 @@ hr
     position: absolute
     right: 10px
 
-// --- 修复：封面图尺寸加大 ---
+// --- 封面图：完整展示无空白 ---
 .post-gallery
   margin: 16px 0
-  display: flex
-  flex-wrap: wrap
-  gap: 12px
   .post-gallery-image
     width: 100%
-    max-width: 320px
-    height: auto
-    min-height: 180px
-    overflow: hidden
+    max-width: 360px
     border-radius: 8px
+    overflow: hidden
     border: 1px solid #2D4A6F
     a
       display: block
-      width: 100%
-      height: 100%
       &:hover img
-        transform: scale(1.03)
+        transform: scale(1.02)
     img
       width: 100%
       height: auto
-      object-fit: cover
-      transition: transform 0.3s ease
       display: block
+      transition: transform 0.3s ease
 
 // --- 修复：分类页字体加大 + 视觉和谐 ---
 .category-list
@@ -432,7 +424,7 @@ hr
     --text-color-secondary: #7B8CA8
     --selection-bg: rgba(77,166,255,0.35)
     --selection-color: #F0F6FC
-    --blockquote-color: #7B8CA8
+    --blockquote-color: #8B9AB8
     --link-color: #4DA6FF
     --link-hover-color: #A5D8FF
     --brand-color: #4DA6FF
