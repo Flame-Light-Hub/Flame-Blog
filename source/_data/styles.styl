@@ -9,7 +9,7 @@ html, body
 
 ::selection
   background: rgba(88,166,255,0.3)
-  color: #E6EDF3
+  color: #F0F6FC
 
 // --- 头部 Header ---
 .header
@@ -20,21 +20,21 @@ html, body
   background: #0D1117 !important
 
 .brand
-  color: #E6EDF3 !important
+  color: #F0F6FC !important
 
 .site-title
-  color: #E6EDF3 !important
+  color: #F0F6FC !important
   font-weight: 600
 
 .site-subtitle
-  color: #8B949E !important
+  color: #9CA3AF !important
 
 // --- 导航菜单 ---
 .site-nav
   background: #0D1117 !important
 
 .menu-item a
-  color: #8B949E !important
+  color: #9CA3AF !important
   border-bottom: 2px solid transparent
   &:hover
     color: #58A6FF !important
@@ -63,13 +63,13 @@ html, body
     &:hover
       background: rgba(88,166,255,0.04)
     .post-meta-line time
-      color: #8B949E
+      color: #9CA3AF
       font-size: 13px
     .post-title-link
       color: #E6EDF3 !important
       font-weight: 500
       &:hover
-        color: #58A6FF !important
+        color: #9ECBFF !important
 
 // --- 归档页面 ---
 .posts-collapse::before
@@ -82,6 +82,18 @@ html, body
 .collection-title
   color: #58A6FF !important
 
+.collection-header
+  color: #9CA3AF !important
+
+.collection-year
+  .collection-header
+    color: #F0F6FC !important
+    font-weight: 700
+
+.post-meta-container
+  time
+    color: #9CA3AF !important
+
 // --- 文章页 ---
 .post-block
   background: #161B22 !important
@@ -91,23 +103,29 @@ html, body
   border: 1px solid #21262D
 
 .post-title
-  color: #E6EDF3 !important
+  color: #F0F6FC !important
   font-weight: 700
 
 .post-title-link
   color: #E6EDF3 !important
   &:hover
-    color: #58A6FF !important
+    color: #9ECBFF !important
 
 .post-meta
-  color: #8B949E !important
+  color: #9CA3AF !important
   span
-    color: #8B949E !important
+    color: #9CA3AF !important
 
 .post-body
   color: #E6EDF3
   line-height: 1.8
-  h2, h3, h4, h5, h6
+  h1
+    color: #F0F6FC
+    font-weight: 700
+  h2
+    color: #E6EDF3
+    font-weight: 600
+  h3, h4, h5, h6
     color: #E6EDF3
     border-bottom-color: #21262D
   p
@@ -121,14 +139,14 @@ html, body
   a
     color: #E6EDF3 !important
     &:hover
-      color: #58A6FF !important
+      color: #9ECBFF !important
 
 .category-list-count
-  color: #8B949E !important
+  color: #9CA3AF !important
 
 // --- 标签页 ---
 .tag-cloud a
-  color: #8B949E !important
+  color: #9CA3AF !important
   background: #21262D
   border: 1px solid #30363D
   border-radius: 4px
@@ -136,7 +154,7 @@ html, body
   margin: 4px
   display: inline-block
   &:hover
-    color: #58A6FF !important
+    color: #9ECBFF !important
     background: rgba(88,166,255,0.1)
     border-color: #388BFD
 
@@ -144,13 +162,13 @@ html, body
 a
   color: #58A6FF
   &:hover
-    color: #79C0FF
+    color: #9ECBFF
 
 // --- 引用 ---
 blockquote
   border-left: 3px solid #388BFD !important
   background: rgba(88,166,255,0.04) !important
-  color: #8B949E !important
+  color: #9CA3AF !important
 
 // --- 代码 ---
 code
@@ -175,7 +193,7 @@ table
   border-color: #30363D
   th
     background: #161B22 !important
-    color: #E6EDF3 !important
+    color: #F0F6FC !important
     border-bottom-color: #30363D
   td
     border-bottom-color: #21262D
@@ -187,32 +205,32 @@ table
 hr
   border: none
   height: 1px
-  background: linear-gradient(to right, transparent, #30363D, transparent)
+  background: linear-gradient(to right, transparent, #3D444D, transparent)
 
 // --- 按钮 ---
 .btn
   background: #21262D
   color: #E6EDF3
-  border: 1px solid #30363D
+  border: 1px solid #3D444D
   border-radius: 6px
   &:hover
     background: #30363D
-    color: #58A6FF
+    color: #9ECBFF
     border-color: #388BFD
 
 // --- 分页 ---
 .pagination
   .page-number, .extend
-    color: #8B949E !important
+    color: #9CA3AF !important
     background: #21262D !important
-    border: 1px solid #30363D
+    border: 1px solid #3D444D
     border-radius: 4px
     &:hover
-      color: #58A6FF !important
+      color: #9ECBFF !important
       background: rgba(88,166,255,0.1) !important
       border-color: #388BFD
   .current
-    color: #58A6FF !important
+    color: #9ECBFF !important
     background: rgba(88,166,255,0.15) !important
     border-color: #388BFD
 
@@ -230,40 +248,40 @@ hr
   box-shadow: 0 0 16px rgba(88,166,255,0.15)
 
 .site-author-name
-  color: #E6EDF3 !important
+  color: #F0F6FC !important
 
 .site-description
-  color: #8B949E !important
+  color: #9CA3AF !important
 
 .site-state-item
-  color: #8B949E
+  color: #9CA3AF
   .site-state-item-count
-    color: #E6EDF3 !important
+    color: #F0F6FC !important
   .site-state-item-name
-    color: #8B949E !important
+    color: #9CA3AF !important
 
 .links-of-author-item a
-  color: #8B949E !important
+  color: #9CA3AF !important
   border-bottom-color: #21262D !important
   &:hover
-    color: #58A6FF !important
+    color: #9ECBFF !important
 
 // --- 页脚 ---
 .footer
   background: #0D1117 !important
-  color: #484F58 !important
+  color: #6E7681 !important
   a
-    color: #8B949E !important
+    color: #9CA3AF !important
     &:hover
-      color: #58A6FF !important
+      color: #9ECBFF !important
 
 // --- 返回顶部 ---
 .back-to-top
   background: #21262D !important
-  color: #8B949E !important
+  color: #9CA3AF !important
   border: 1px solid #30363D
   &:hover
-    color: #58A6FF !important
+    color: #9ECBFF !important
 
 // --- 搜索 ---
 .search-box input
@@ -271,27 +289,27 @@ hr
   color: #E6EDF3 !important
   border: 1px solid #30363D
   &::placeholder
-    color: #484F58
+    color: #6E7681
 
 // --- 文章底部 ---
 .post-copyright
   background: rgba(88,166,255,0.04) !important
   border: 1px solid #21262D !important
   border-radius: 6px
-  color: #8B949E
+  color: #9CA3AF
 
 .post-nav
   .post-nav-item
-    color: #8B949E !important
+    color: #9CA3AF !important
     &:hover
-      color: #58A6FF !important
+      color: #9ECBFF !important
 
 // --- 相关文章 ---
 .related-posts
   .related-post-title
-    color: #E6EDF3 !important
+    color: #F0F6FC !important
   .related-post-link
-    color: #58A6FF !important
+    color: #9ECBFF !important
 
 // --- 阅读进度条 ---
 .reading-progress-bar
@@ -302,6 +320,30 @@ hr
   svg
     fill: #58A6FF !important
     color: #0D1117 !important
+
+// --- 归档页封面图 ---
+.post-gallery
+  margin: 12px 0
+  display: flex
+  flex-wrap: wrap
+  gap: 8px
+  .post-gallery-image
+    width: 120px
+    height: 80px
+    overflow: hidden
+    border-radius: 6px
+    border: 1px solid #30363D
+    a
+      display: block
+      width: 100%
+      height: 100%
+      &:hover img
+        transform: scale(1.05)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: transform 0.3s ease
 
 // --- 滚动条美化 ---
 ::-webkit-scrollbar
@@ -328,19 +370,20 @@ hr
     --content-bg-color: #161B22
     --card-bg-color: #1C2128
     --text-color: #E6EDF3
+    --text-color-secondary: #9CA3AF
     --selection-bg: rgba(88,166,255,0.3)
-    --selection-color: #E6EDF3
-    --blockquote-color: #8B949E
+    --selection-color: #F0F6FC
+    --blockquote-color: #9CA3AF
     --link-color: #58A6FF
-    --link-hover-color: #79C0FF
+    --link-hover-color: #9ECBFF
     --brand-color: #58A6FF
-    --brand-hover-color: #79C0FF
+    --brand-hover-color: #9ECBFF
     --table-row-odd-bg-color: #1C2128
     --table-row-hover-bg-color: rgba(88,166,255,0.06)
     --menu-item-bg-color: #21262D
     --theme-color: #58A6FF
     --btn-default-bg: #21262D
     --btn-default-color: #E6EDF3
-    --btn-default-border-color: #30363D
+    --btn-default-border-color: #3D444D
     --btn-default-hover-bg: #30363D
-    --btn-default-hover-color: #58A6FF
+    --btn-default-hover-color: #9ECBFF
