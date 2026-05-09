@@ -332,7 +332,9 @@ hr
     max-width: 360px
     border-radius: 8px
     overflow: hidden
-    border: 1px solid #2D4A6F
+    border: none
+    box-shadow: none
+    outline: none
     a
       display: block
       &:hover img
@@ -476,12 +478,21 @@ hr
   margin: 12px 0 12px 20px !important
   justify-content: center !important
   .post-gallery-image
+    display: inline-block !important
+    width: fit-content !important
     max-width: 320px !important
     border-radius: 8px
     overflow: hidden
+    border: none !important
+    box-shadow: none !important
+    outline: none !important
+    background: transparent
     img
-      width: 100% !important
+      display: block !important
+      width: auto !important
+      max-width: 100% !important
       height: auto !important
+      max-height: 200px !important
       object-fit: contain !important
       border-radius: 8px
 
